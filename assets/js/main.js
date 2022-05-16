@@ -14,6 +14,7 @@ $(document).on('scroll', () => {
         $('#btnUp').fadeOut('slow')
     }
 })
+
 // Faz animação para subir página
  $('#btnUp').click( e => {
     e.preventDefault();
@@ -50,17 +51,11 @@ $(document).ready(function(){
             mensagem: {required: 'Informe sua mensagem'}
         },
 
+        //envia dados do form para script de envio do email
         submitHandler: function(form) {
-            var dados = $(form).serialize();
+            var dados = $(form).serialize().split(',');
 
-            //requisição ajax com script para envio do email
-            $.ajax({
-                type: 'POST',
-                url: 'assets/php/envia_email.php',
-                data: dados,
-                success: () => location.replace('views/success.php?view=success'),
-                error: () => location.replace('views/success.php?view=error')
-            })
+            window.location = "assets/php/envia_email.php?"+dados
 
         }
     })
