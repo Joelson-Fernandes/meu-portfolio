@@ -52,3 +52,23 @@ skillDescription (
     "O SASS é uma linguagem de extensão do CSS, traduzindo ao pé da letra, folhas de estilo com uma sintaxe incrível."
 )
 
+skillDescription (
+    ".node",
+    "Node.js é um ambiente de execução JavaScript que permite executar aplicações desenvolvidas com a linguagem de forma autônoma, sem depender de um navegador."
+)
+
+skillDescription (
+    ".codeigniter",
+    "O CodeIgniter é um framework de desenvolvimento de aplicações em PHP. "
+)
+
+skillDescription (
+    ".react",
+    "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário (front-end) em páginas web."
+)
+
+skillDescription (
+    ".mongo",
+    "MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma"
+)
+

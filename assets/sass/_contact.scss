@@ -1,0 +1,105 @@
+/****** CONTATO ******/
+
+#s-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    h1 {
+      text-align: center;
+      padding-top: 30px;
+      text-decoration: underline #E96257;
+    }
+
+    .contact {
+      width: 60vw;
+      max-width: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0f0f0f0e;
+      border-radius: 15px;
+    
+      img {
+        width: 50%;
+        max-width: 500px;
+        padding: 30px;
+        height: 400px;
+      }
+
+      form {
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 20px;
+  
+        input {
+          width: 90%;
+          height: 32px;
+          margin: 5px;
+          padding: 10px;
+          display: block;
+          border: none;
+          border-radius: 5px;
+      
+          &[type=text]:focus, &[type=email]:focus {
+            border: none;
+          }
+        }
+      
+        textarea {
+          width: 90%;
+          margin: 5px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          resize: none;
+        }
+      
+        button {
+          width: 90%;
+          margin: 5px;
+          height: 38px;
+          color: #eff0f3;
+          cursor: pointer;
+          background-color: #E96257;
+          border: 1px solid #0d0d0d;
+          border-radius: 5px;
+          text-shadow: 1px 0 0 #0d0d0d, -1px 0 0 #0d0d0d, 0 1px 0 #0d0d0d, 0 -2px 0 #0d0d0d, 1px 1px #0d0d0d, -1px -1px 0 #0d0d0d, 1px -1px 0 #0d0d0d, -1px 1px 0 #0d0d0d;
+        }
+      }
+
+    }
+    
+    .contact-icons {
+      a img {
+        width: 40px;
+        margin: 15px 5px;
+      }
+    
+      display: flex;
+      justify-content: center;
+    }
+    
+    :placeholder-shown {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    @media only screen and (max-width: 1024px) {
+      .contact {
+        img {
+          display: none;
+        }
+    
+        width: 90vw;
+      }
+    
+      form {
+        width: 100%;
+      }
+    }
+}

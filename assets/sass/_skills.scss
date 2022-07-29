@@ -1,0 +1,103 @@
+/****** CONHECIMENTOS ******/
+
+#s-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0;
+  
+    .skills-cards, .skills-text {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    h1 {
+      text-decoration: underline #E96257;
+    }
+
+      
+  .skills-text {
+    height: 200px;
+  }
+  
+  .skill-description {
+    margin-top: 15px;
+  }
+  
+  .skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+  
+    div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 10%;
+      height: 115px;
+      margin: 10px 18px;
+      background-color: #0f0f0f0e;
+      border-radius: 5px;
+      transition: 0.2s ease-in-out;
+    }
+  }
+  
+  .skills-cards-hover {
+    border: 2px solid #2a2a2a;
+    animation: skills-cards-animation 0.5s both;
+    box-shadow: 1px 1px 5px 1px #0d0d0d;
+  }
+  
+  @keyframes skills-cards-animation {
+    from {
+      top: 0px;
+    }
+  
+    to {
+      top: -8px;
+    }
+  }
+  
+  .skills-cards div {
+    img {
+      width: 120px;
+      height: 90px;
+      padding: 5px;
+    }
+  
+    span {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    #s-skills {
+      .skills-cards, .skills-text {
+        width: 100%;
+        padding: 50px 10px;
+      }
+    }
+  
+    .skills-text {
+      height: 250px;
+    }
+  }
+  
+  @media only screen and (min-width: 700px) and (max-width: 1024px) {
+    #s-skills {
+      padding: 0;
+  
+      .skills-cards, .skills-text {
+        width: 70%;
+        padding: 100px 20px;
+      }
+    }
+  
+    .skills-cards div {
+      flex: 40%;
+      margin: 5px 20px;
+    }
+  }
+}

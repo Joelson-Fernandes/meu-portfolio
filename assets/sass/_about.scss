@@ -1,0 +1,45 @@
+/******* SOBRE MIM ******/
+
+#s-about {
+  .about-text {
+    padding: 15px;
+    max-width: 500px;
+  
+    h1 {
+      margin-bottom: 10px;
+      text-decoration: underline #eff0f3;
+    }
+  
+    p {
+      margin-bottom: 30px;
+    }
+  
+    a {
+      padding: 8px 50px;
+      color: #0d0d0d;
+      font-size: 18px;
+      background-color: #eff0f3;
+      border: 2px solid #0d0d0d;
+      border-radius: 5px;
+      box-shadow: 1px 1px 10px 1px #0d0d0d;
+      transition: 0.3s;
+  
+      &:hover {
+        color: #eff0f3;
+        background-color: #0d0d0d;
+        border: 2px solid #eff0f3;
+      }
+    }
+  }
+
+  .about-img img {
+    width: 500px;
+    height: 450px;
+  }
+  
+  @media (max-width: 1024px) {
+    .about-img {
+      display: none;
+    }
+  }
+}
