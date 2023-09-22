@@ -1,6 +1,6 @@
 <h1 align="center">Meu portifólio 💻</h1>
 
-> <p align="center"> Portifólio do desenvolvedor. <a href="https://www.joelsonfernandes.com.br/">Visite a página</a></p>
+> <p align="center"> Portifólio do desenvolvedor. <a href="http://www.joelsonfernandes.lovestoblog.com">Visite a página</a></p>
 
 <div align="center">
  <h3 align="center">Tecnologias utilizadas:</h3>
